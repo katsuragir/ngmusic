@@ -3,7 +3,16 @@
     ==========================*/
 
 @media only screen and (max-width: 400px) {
-    
+    .box-search {
+        padding: 50px 10px;
+
+        .searchInput {
+
+            .search {
+                width: 100%;
+            }
+        }
+    }
 }
 
 /*=====================
