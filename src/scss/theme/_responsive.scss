@@ -1,0 +1,93 @@
+/*=====================
+    1.home
+    ==========================*/
+
+@media only screen and (max-width: 400px) {
+    
+}
+
+/*=====================
+    2.search
+    ==========================*/
+
+@media only screen and (max-width: 400px) {
+    .header {
+        width: 105%;
+        height: 70px;
+        border-radius: 0 0 35% 35%;
+
+        .menu {
+            display: block;
+
+            img {
+                width: auto;
+                height: 20px;
+            }
+        }
+
+        .title {
+            width: 60%;
+
+            h1 {
+                font-size: 20px !important;
+            }
+        }
+
+        .indicator {
+            padding-right: 15px;
+            padding-top: 4px;
+
+            img {
+                height: 20px;
+            }
+        }
+    }
+
+    .body-result {
+        margin: 15px;
+
+        .box-result {
+
+
+            .list {
+
+                .box {
+                    width: 310px;
+                    height: 100px;
+
+                    .detail-song {
+
+                        .artistName{
+                            font-size: 12px;
+                        }
+
+                        .trackCensoredName {
+                            font-size: 14px;
+                            margin-bottom: 10px;
+                        }
+
+                        .icon { 
+                            
+                            .primaryGenreName { 
+                                
+                                span {
+                                    font-size: 11px;
+                                }
+                            }
+
+                            img {
+                                height: 15px;
+                                margin-top: 7px;
+                            }
+
+                            span {
+                                font-size: 11px;
+                                margin-top: 7px;                            
+                            }
+                        }    
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+<div class="header">
+    <div class="menu">
+        <img src="assets/images/menu@3x.png" alt="menu"> 
+    </div>
+    <div class="title">
+        <h1>ngmusic</h1>
+    </div>
+    <div class="indicator">
+        <img src="assets/images/search@3x.png" alt="search"> 
+    </div>
+</div>
+<div class="body-result">
+    <div class="result">
+        <div class="result-text">Search result for : <span *ngIf="resultSearch">{{resultSearch}}</span></div>
+    </div>
+    <div class="box-result" *ngIf="musics">
+        <div class="list" *ngFor="let m of musics">
+            <div class="box">
+                <div class="image-song">
+                    <img [src]="m.artworkUrl100" alt="m.collectionName"> 
+                </div>
+                <div class="detail-song">
+                    <div class="artistName">{{m.artistName}}</div>
+                    <div class="trackCensoredName">{{m.trackCensoredName}}</div>
+                    <div class="icon">
+                        <div class="primaryGenreName"><span>{{m.primaryGenreName}}</span></div>
+                        <img src="assets/images/currency-dollar@3x.png" alt="current"><span class="collectionPrice">{{m.collectionPrice}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
